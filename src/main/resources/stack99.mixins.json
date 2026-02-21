@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cc.folia.stack99.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemMixin",
+    "ItemStackMixin",
+    "SlotMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

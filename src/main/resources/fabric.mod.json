@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "stack99",
+  "version": "${version}",
+  "name": "Stack99",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/stack99/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cc.folia.stack99.client.Stack99Client"
+    ],
+    "main": [
+      "cc.folia.stack99.Stack99"
+    ]
+  },
+  "mixins": [
+    "stack99.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

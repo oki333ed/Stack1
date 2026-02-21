@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDEs/editors
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+hs_err_pid*
+replay_pid*
+
+# Minecraft/Forge/Fabric generated runtime files
+run/
+logs/
+crash-reports/
+saves/
+options.txt
+
+# Local environment/config
+.env
+.env.*
