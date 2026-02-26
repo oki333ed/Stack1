@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class SlotMixin {
     @Inject(method = "getMaxStackSize()I", at = @At("HEAD"), cancellable = true)
     private void forceSlotMax(CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(99);
+        cir.setReturnValue(1);
     }
 
     @Inject(method = "getMaxStackSize(Lnet/minecraft/world/item/ItemStack;)I", at = @At("HEAD"), cancellable = true)
