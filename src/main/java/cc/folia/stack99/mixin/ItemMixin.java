@@ -10,6 +10,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ItemMixin {
     @Inject(method = "getDefaultMaxStackSize", at = @At("HEAD"), cancellable = true)
     private void forceDefaultStack(CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(99);
+        cir.setReturnValue(1);
     }
 }
