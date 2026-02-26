@@ -16,6 +16,6 @@ public abstract class SlotMixin {
 
     @Inject(method = "getMaxStackSize(Lnet/minecraft/world/item/ItemStack;)I", at = @At("HEAD"), cancellable = true)
     private void forceSlotMaxStack(ItemStack stack, CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(99);
+        cir.setReturnValue(1);
     }
 }
